@@ -5,76 +5,23 @@ import FooterNav from '../shared/FooterNav.astro';
 import Paragraph from '../shared/Paragraph.astro';
 const footerNav1 = [
   {
-    itemText: 'Marketing',
-    itemLink: '#',
-  },
-  {
-    itemText: 'Analylitics',
-    itemLink: '#',
-  },
-  {
-    itemText: 'Commerce',
-    itemLink: '#',
-  },
-  {
-    itemText: 'Insights',
-    itemLink: '#',
+    itemText: '+(57) 300 246 61 43',
+    itemLink: 'tel:+(57)3002466143',
   },
 ];
 
 const footerSupport = [
   {
-    itemText: 'Pricing',
-    itemLink: '#',
-  },
-  {
-    itemText: 'Guides',
-    itemLink: '#',
-  },
-  {
-    itemText: 'FAQ',
-    itemLink: '#',
-  },
-  {
-    itemText: 'Contact',
-    itemLink: '#',
+    itemText: 'Av Cra 30 # 52-77 Bogotá - Colombia',
+    itemLink:
+      'https://www.google.com/maps/place/Ave+Cra+30+%2352-77,+Bogot%C3%A1/@4.6423294,-74.0798098',
   },
 ];
 
 const footerCompany = [
   {
-    itemText: 'About',
-    itemLink: '/about',
-  },
-  {
-    itemText: 'Blog',
-    itemLink: '#',
-  },
-  {
-    itemText: 'Jobs',
-    itemLink: '#',
-  },
-  {
-    itemText: 'Parteners',
-    itemLink: '#',
-  },
-  {
-    itemText: 'Jobs',
-    itemLink: '#',
-  },
-];
-const footerLegal = [
-  {
-    itemText: 'Claim',
-    itemLink: '/#',
-  },
-  {
-    itemText: 'Privacy',
-    itemLink: '#',
-  },
-  {
-    itemText: 'Terms',
-    itemLink: '#',
+    itemText: 'info@okappi.com.co',
+    itemLink: 'mailto:info@okappi.com.co',
   },
 ];
 ---
@@ -135,12 +82,12 @@ const footerLegal = [
               ></span>
             </div>
             <div class="inline-flex text-lg font-semibold text-heading-1">
-              AgenceX
+              Okappi
             </div>
           </a>
           <Paragraph className={'mt-8'}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-            maiores nam doloribus id magni
+            Estamos comprometidos a ayudar a nuestros clientes globales a tener
+            éxito
           </Paragraph>
         </div>
 
@@ -213,13 +160,12 @@ const footerLegal = [
       </div>
 
       <GroupFooterNav>
-        <FooterNav title={'Company'} navItems={footerCompany} />
-        <FooterNav title={'Solutions'} navItems={footerNav1} />
+        <FooterNav title={'Correo electrónico'} navItems={footerCompany} />
+        <FooterNav title={'Contacto'} navItems={footerNav1} />
       </GroupFooterNav>
 
       <GroupFooterNav>
-        <FooterNav title={'Support'} navItems={footerSupport} />
-        <FooterNav title={'Ressources'} navItems={footerLegal} />
+        <FooterNav title={'Estamos ubicados'} navItems={footerSupport} />
       </GroupFooterNav>
     </div>
   </Container>
@@ -229,15 +175,13 @@ const footerLegal = [
         class="flex justify-between items-center gap-6 md:text-lg text-heading-3"
       >
         <div>
-          &copy; <span id="year"></span> AgenceX. All right reserved
-        </div>
-        <div>
-          Proudly made by <a
-            href="https://github.com/johnkat-mj"
+          &copy; <span id="year"></span>2024 <a
+            href="https://www.okappi.com.co/"
             target="_blank"
-            class="font-semibold">John Kat</a
+            class="font-semibold">Okappi S.A.S</a
           >
         </div>
+        <div>Todos los derechos reservados.</div>
       </div>
     </Container>
   </div>

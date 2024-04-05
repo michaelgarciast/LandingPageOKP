@@ -10,4 +10,5 @@ export const dataTools = [
   { name: 'NodeJS', image_link: '/images/tools/node.png' },
   { name: 'React', image_link: '/images/tools/react.png' },
   { name: 'Svelte', image_link: '/images/tools/svelte.png' },
+  { name: 'Astro', image_link: '/images/tools/astro.png' },
 ];

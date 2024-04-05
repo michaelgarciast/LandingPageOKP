@@ -2,7 +2,7 @@
 import Container from '../shared/Container.astro';
 import Title from '../shared/Title.astro';
 import { dataTools } from '../../lib/data/tools.ts';
-import Tools from '../cards/Tools.astro';
+import Tool from '../cards/Tool.astro';
 
 type ToolsProps = {
   name: string;
@@ -18,7 +18,7 @@ type ToolsProps = {
     <div class="flex justify-center flex-wrap gap-4">
       {
         dataTools.map((tools: ToolsProps) => {
-          return <Tools name={tools.name} image_link={tools.image_link} />;
+          return <Tool name={tools.name} image_link={tools.image_link} />;
         })
       }
     </div>

@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import bannerAboutUs from '../../../public/images/media/features.webp';
 import Info from '../cards/Info.astro';
 import Container from '../shared/Container.astro';
 import Paragraph from '../shared/Paragraph.astro';
@@ -23,29 +25,28 @@ import Title from '../shared/Title.astro';
         <span
           class="absolute w-full aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-tr from-primary to-green-400 opacity-40 blur-2xl left-0 bottom-0"
         ></span>
-        <img
-          src={'/images/dev-with-c-1.webp'}
-          alt="banner image"
-          width="1240"
-          height="1385"
-          class="w-auto left-1/2 -translate-x-1/2 absolute bottom-0 max-h-full"
+        <Image
+          class="lg:absolute lg:w-full rounded-3xl object-cover lg:max-h-none max-h-96"
+          src={bannerAboutUs}
+          alt="banner Aboutus"
+          width={1240}
+          height={1385}
         />
       </div>
     </div>
     <div class="flex-1 flex midmd:w-7/12 lg:w-1/2 flex-col">
-      <Title> We help drive your business forward faster </Title>
+      <Title> Team Okappi </Title>
       <Paragraph className="mt-8">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, saepe
-        aliquid autem alias vero distinctio dignissimos consequatur? Excepturi
-        quibusdam, quam ipsum hic, laudantium ducimus suscipit, culpa facere
-        consequuntur repellat delectus.
+        Cada miembro de nuestro equipo aporta un conjunto único de habilidades y
+        experiencias al panorama, creando un mosaico de talento que impulsa
+        nuestro éxito.
       </Paragraph>
       <div
         class="pt-8 grid grid-cols-2 items-center gap-4 max-w-3xl md:max-w-[none]"
       >
         <Info
-          description="Lorem ipsum dolor sit amet consectetur"
-          title="Mission"
+          description="Promovemos la colaboración fluida de todos los miembros del proyecto, para alcanzar los objetivos. "
+          title="Cultura"
         >
           <span slot="icon">
             <svg
@@ -66,8 +67,8 @@ import Title from '../shared/Title.astro';
           </span>
         </Info>
         <Info
-          description="Lorem ipsum dolor sit amet consectetur"
-          title="Vision"
+          description="Marcamos diferencia en el mercado de la tecnología, al ofrecer soluciones personalizadas, a la medida y eficientes."
+          title="Liderazgo"
         >
           <span slot="icon">
             <svg
