@@ -1,5 +1,5 @@
 ---
-import Button from '../shared/Button.astro';
+import BtnLink from '../shared/BtnLink.astro';
 import Container from '../shared/Container.astro';
 import Paragraph from '../shared/Paragraph.astro';
 ---
@@ -50,9 +50,12 @@ import Paragraph from '../shared/Paragraph.astro';
           Okappi te ayuda a cumplirlo, solo necesitas dar el primer paso.
         </Paragraph>
         <div class="mx-auto max-w-md sm:max-w-xl pt-10">
-          <Button variant={'primary'}>
-            <span class="text-white relative z-[5]">Cotiza Aquí</span>
-          </Button>
+          <BtnLink
+            text="Quiero cotizar"
+            href="https://www.okappi.com.co/"
+            className="flex justify-center w-full "
+            variant="primary"
+          />
         </div>
       </div>
     </div>
