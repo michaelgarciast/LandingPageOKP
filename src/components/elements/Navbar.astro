@@ -1,13 +1,11 @@
 ---
+import { Image } from 'astro:assets';
+import footerLogo from '../../../public/images/favicon.webp';
 import BtnLink from '../shared/BtnLink.astro';
 import Container from '../shared/Container.astro';
 import Navitem from '../shared/Navitem.astro';
 
 const navItems = [
-  {
-    href: '#',
-    text: 'Home',
-  },
   {
     href: '#services',
     text: 'Servicios',
@@ -29,19 +27,13 @@ const navItems = [
       <!-- logo -->
       <div class="min-w-max inline-flex relative">
         <a href="/" class="relative flex items-center gap-3">
-          <div class="relative w-7 h-7 overflow-hidden flex rounded-xl">
-            <span
-              class="absolute w-4 h-4 -top-1 -right-1 bg-green-500 rounded-md rotate-45"
-            ></span>
-            <span
-              class="absolute w-4 h-4 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"
-            ></span>
-            <span
-              class="absolute w-4 h-4 -bottom-1 -left-1 bg-primary rounded-md rotate-45"
-            ></span>
-            <span
-              class="absolute w-2 h-2 rounded-full bg-heading-1 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-            ></span>
+          <div class="relative w-7 h-7 flex">
+            <Image
+              class="lg:absolute lg:w-full rounded-3xl object-cover lg:max-h-none max-h-96"
+              src={footerLogo}
+              alt="Logo-Nav"
+
+            />
           </div>
           <div class="inline-flex text-lg font-semibold text-heading-1">
             Okappi
@@ -74,7 +66,7 @@ const navItems = [
         >
           <BtnLink
             text="Quiero cotizar"
-            href="https://www.okappi.com.co/"
+            href="https://www.okappi.com.co/cotizar"
             className="flex justify-center w-full sm:w-max"
             variant="primary"
           />

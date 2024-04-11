@@ -13,7 +13,9 @@ module.exports = {
         'heading-1': 'rgb(var(--heading-1))',
         'heading-2': 'rgb(var(--heading-2))',
         'heading-3': 'rgb(var(--heading-3))',
-        'bg-tools': '#ffffff40',
+
+        'bg-tools': '#ffffffe0',
+        'color-primary': '#040c31',
       },
       screens: {
         midmd: '880px',
