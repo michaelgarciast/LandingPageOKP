@@ -1,7 +1,7 @@
-# Astro Starter Kit: Basics
+# Astro Okappi S.A.S
 
 ```sh
-yarn create astro -- --template basics
+yarn create astro
 ```
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
