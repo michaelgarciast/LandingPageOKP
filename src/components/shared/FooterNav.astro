@@ -4,6 +4,7 @@ export interface Props {
   navItems: {
     itemText: string;
     itemLink: string;
+    itemBlank: string;
   }[];
 }
 
@@ -18,7 +19,11 @@ const { title, navItems } = Astro.props;
     {
       navItems.map((navItem) => (
         <li>
-          <a href={navItem.itemLink} class="transition hover:text-primary">
+          <a
+            href={navItem.itemLink}
+            target={navItem.itemBlank}
+            class="transition hover:text-primary"
+          >
             {navItem.itemText}
           </a>
         </li>
